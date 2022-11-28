@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,200;0,300;0,600;0,800;1,200;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'syne';
+    background-color: #fafafa;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul{
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li{
+padding: 20px;
+font-family: 'syne';
+}
+
+nav ul li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style-type: none;
+    color:black;
+}
+/* =============== */
+.buy{
+    background-color: #793cfb;
+    padding: 10px 20px;
+    color: #fafafa;
+    font-family: 'syne';
+
+}
+
+.nav-logo h1{
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'syne';
+    padding: 30px;
+}
+
+
+/* ========
+sidebar
+====== */
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    /* background-color: #111; */
+    color: #793cfb;
+    padding: 10px 15px;
+    border: none;
+}
+
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/* =========================== 
+nav toggle hamburger
+========================*/
+input[type="checkbox"] {
+--webkit-appearance: none;
+    display: none;
+    visibility: hidden;
+}
+
+.bar {
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    display: none;
+    /* visibility: hidden; */
+}
+
+.bar span {
+    position: absolute;
+    width: 45px;
+    height: 7px;
+    background:#793cfb;
+    border-radius: 100px;
+    display: inline-block;
+    transition: 0.3s ease;
+    left: 0;
+}
+
+.bar span.top {
+    top: 0;
+}
+
+.bar span.middle {
+    top: 17px;
+}
+
+.bar span.bottom {
+    bottom: 0;
+}
+
+input[type]:checked~span.top {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 48px;
+    left: 5px;
+}
+
+input[type]:checked~span.bottom {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    width: 48px;
+    bottom: -1px;
+}
+
+input[type]:checked~span.middle {
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+@media  (max-width:900px) {
+    nav ul li a{
+        display: none;
+    }
+
+    .bar{
+        display: block;
+        /* margin-right: 200px; */
+    }
+
+}
+/* ==================
+landing text */
+.first{
+height: auto;
+width: 100%;
+
+}
+
+.landing-text{
+    text-align: center;
+    margin-top: 70px;
+}
+.landing-text h1{
+    color: #222829;
+    font-size: 4rem;
+    text-transform: capitalize; 
+}
+.landing-text p{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.landing-text h4{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* =======
+Landing btn
+ ==========*/
+
+.mybtn{
+border: 2px solid #793cfb;
+padding: 15px 40px;
+background-color: transparent;
+color: rgb(67, 83, 255);
+margin-top: 40px;
+}
+
+.btn-buy{
+    background-color:#793cfb;
+    color: white;
+    font-weight: 600;
+}
+.btn-learn{
+    color: #793cfb;
+    font-weight: 600;
+}
+
+
+/* ===================
+landing img
+============= */
+.image{
+
+    margin-top: 60px;
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+} 
+
+ .width{
+   width: 100%;
+   } 
+
+
+/* ==================
+section two
+============== */
+.second{
+    height: auto;
+    width: 100%;
+
+}
+
+.second h1{
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.clients{
+    text-align: center;
+    height: auto;
+    width: 10%;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+}
+
+ion-icon{
+    font-size: 30px;
+    padding: 10px;
+    color: #495057;
+}
+
+.clients div{
+padding: 20px;
+text-align: center;
+}
+
+/* stack items */
+
+.stacks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stack-items{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f5f5f7;
+    width: 70%;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+
+.stack-items h3{
+    font-size: 3rem;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    font-weight: lighter;
+}
+
+.list-text{
+    padding: 10px;
+}
+
+
+.stack-img{
+    margin-top: 50px;
+}
+
+@media screen and (max-width:770px) {
+    .stack-items p {
+        display: none;
+    }
+    .stack-items h4 {
+        margin-top: 10px;
+        font-size: 10px;
+        padding: none;
+    }
+
+        .stack-img {
+            margin-top: 90px;
+        }
+}
+
+/* section third */
+.title{
+    text-align: center;
+margin-top: 100px;
+
+}
+.title p{
+font-size: 20px;
+font-weight: 500;
+margin-bottom: 20px;
+}
+.title h1{
+font-size: 50px;
+
+}
+
+.imagex{
+width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left:auto;
+    margin-right: auto;
+        margin-top: 100px;
+        padding: 10px;
+}
+
+.dark-1{
+    margin-right: -0px;
+}
