@@ -390,3 +390,271 @@ width: 70%;
 .dark-1{
     margin-right: -0px;
 }
+
+
+
+
+
+
+/* =======================
+footer================== */
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col-sm-12{
+    padding: 10px;
+    width: 30%;
+}
+
+.socials{
+    margin-top: 30px;
+}
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+
+
+hr{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+
+
+/*=============== cards */
+.card {
+    width: 190px;
+    height: 120px;
+    transition: all .5s;
+    box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+        -15px -15px 30px rgba(60, 60, 60, 0.082);
+    text-align: center;
+    overflow: hidden;
+}
+
+.card:hover {
+    height: 254px;
+    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+}
+
+.card .header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+    margin-bottom: 16px;
+}
+
+.card .header .img-box {
+    width: 50px;
+}
+
+.card .header .title {
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 0 14px 0;
+    transition: all .5s;
+    color: #edededc5;
+}
+
+.card:hover .header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card:hover .card .header .title {
+    padding: 0;
+}
+
+.card .content {
+    display: block;
+    text-align: justify;
+    color: #212121;
+    margin: 0 18px;
+}
+
+.card .content p {
+    transition: all .5s;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+.card .content a {
+    color: #1d8122;
+    cursor: pointer;
+    transition: all .5s;
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card .content .btn-link:hover {
+    border-bottom: 1px solid #1d8122;
+}
